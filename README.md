@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 
 This Application is built on HTML, CSS, and mostly pure Javascript. It utilizes an Node.js/Express Server to run, 
 and implements component based architecture to render compoents to the DOM. This is modeled off of React.js, 
