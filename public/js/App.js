@@ -16,23 +16,19 @@ const App = function (parentElement) {
     appContainer.appendChild(mainContainer);
     parentElement.appendChild(appContainer);
 
-    // Render Nav
-    const nav = Nav();
-    nav.render(navContainer);
-
-    // Function to render Homepage
     const renderHomepage = function () {
-        const homepage = Homepage(renderContactpage);
+        const homepage = Homepage();
         homepage.render(mainContainer);
     };
 
-    // Function to render Contactpage
     const renderContactpage = function () {
-        const contactpage = Contactpage(renderHomepage);
+        const contactpage = Contactpage();
         contactpage.render(mainContainer);
     };
 
-    // Initial Render: Homepage
+    const nav = Nav(renderHomepage, renderContactpage);
+    nav.render(navContainer);
+
     renderHomepage();
 };
 

@@ -1,34 +1,29 @@
-const Nav = function () {
-    const TestButton = function () {
-        window.location.href = "https://www.google.com";
-    };
+const Nav = function (switchToHome, switchToContact) {
+    const navContainer = document.createElement('nav');
+    navContainer.id = 'nav';
 
-    const navElement = document.createElement('nav');
-    navElement.id = 'nav';
+    const navFlexDiv = document.createElement('div');
+    navFlexDiv.id = 'navFlexDiv'
 
-    const navDiv = document.createElement('div');
-    navDiv.id = 'navDiv';
+    const homeButton = document.createElement('button');
+    homeButton.textContent = 'Homepage';
+    homeButton.className = 'navButton';
 
-    const paragraph = document.createElement('p');
-    paragraph.textContent = 'About me';
+    const contactButton = document.createElement('button');
+    contactButton.textContent = 'Contact';
+    contactButton.className = 'navButton';
 
-    const button = document.createElement('button');
-    button.textContent = 'Click Me';
-    button.id = 'testButton';
+    navContainer.appendChild(navFlexDiv);
+    navFlexDiv.appendChild(homeButton);
+    navFlexDiv.appendChild(contactButton);
 
-    // Append elements
-    navDiv.appendChild(paragraph);
-    navDiv.appendChild(button);
-    navElement.appendChild(navDiv);
-
-    // Attach event listeners
     const attachListeners = function () {
-        button.addEventListener('click', TestButton);
+        homeButton.addEventListener('click', switchToHome);
+        contactButton.addEventListener('click', switchToContact);
     };
 
-    // Render the nav element dynamically
     const render = function (parentElement) {
-        parentElement.appendChild(navElement);
+        parentElement.appendChild(navContainer);
         attachListeners();
     };
 
