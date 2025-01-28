@@ -2,11 +2,10 @@ body, html {
     margin: 0px;
     padding: 0px;
 }
-#container {
-    background-color: blue;
-}
 #nav {
     padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(87, 87, 87);
 }
 
 #navDiv {
