@@ -52,6 +52,16 @@ body, html {
 #homeBodyDiv {
     width: 60%;
     margin: 20px auto 0px auto;
-    text-align: justify;
+    text-align: left;
     font-size: x-large;
+    hyphens: auto;
+}
+
+#homeImageContainer {
+    border-radius: 100%;
+    margin: auto;
+}
+
+#homeImgDiv {
+    text-align: center;
 }
