@@ -4,9 +4,13 @@ const Homepage = function () {
 
     const homeTitle = document.createElement('h1');
     homeTitle.textContent = 'Welcome';
+    homeTitle.id = 'homeTitle'
 
     const homeBodyDiv = document.createElement('div');
     homeBodyDiv.id = 'homeBodyDiv';
+
+    const greetingDiv = document.createElement('div');
+    greetingDiv.className = 'homeBodyInnerDiv';
 
     const imageContainer = document.createElement('img');
     imageContainer.id = 'homeImageContainer';
@@ -17,13 +21,18 @@ const Homepage = function () {
 
     const greetingsText = document.createElement('p');
     greetingsText.id = 'homeGreetingsText';
-    greetingsText.innerText = 'Hi, my name is Andrew Sirico and I am a software engineer who specializes in web development. I am also experienced writing programs and scripts in Python, Java, and C. Furthermore, my experience extends to SwiftUI, Android Development, and using AWS EC2 instances. I am comfortable querying in SQL, Mongodb, firebase, and GraphQL. Also, I have utilized firebase, am comfortable with using Github, have experience with Jira, and comfortable participating in SCRUM meetings. I am highly sociable, carry a professional demeanor, and have high empathy. I strive to be self-aware and to keep my ego in check. The people I look up to most throughout history are Marcus Aurelius, Diogenes of Sinope, Friedrich Nietzsche, George Washington, Tatanka Iyotake, and Siddhartha Gautama';
+    greetingsText.innerText = 'Hi, my name is Andrew Sirico and I am a software engineer specializing in web development. '+ 
+    'I have experience writing programs and scripts in Python, Java, and C. Furthermore, my experience extends to SwiftUI, '+
+    'Android Development, and using AWS EC2 instances. I am proficient in database management with SQL, MongoDB, Firebase, and GraphQL.'+
+    ' Additionally, I am comfortable with using Github, have experience with Jira, and I am familiar with SCRUM methodologies. '+
+    'I pride myself on being sociable, professional, and empathetic, always striving for self-awareness and humility.'
 
     homePageContainer.appendChild(homeTitle);
     homePageContainer.appendChild(homeBodyDiv);
     imageDiv.appendChild(imageContainer);
-    homeBodyDiv.appendChild(imageDiv);
-    homeBodyDiv.appendChild(greetingsText);
+    homeBodyDiv.appendChild(greetingDiv);
+    greetingDiv.appendChild(imageDiv);
+    greetingDiv.appendChild(greetingsText);
 
     const render = function (parentElement) {
         parentElement.innerHTML = '';
