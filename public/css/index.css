@@ -143,7 +143,7 @@ body, html {
     
     #homeImageContainer {
         border-radius: 100%;
-        margin: auto;
+        margin: 15px auto 0px auto;
     }
     
     #homeImgDiv {
@@ -219,7 +219,7 @@ body, html {
     
     #homeImageContainer {
         border-radius: 100%;
-        margin: auto;
+        margin: 15px auto 0px auto;
         width: 88%;
         height: 88%;
     }
