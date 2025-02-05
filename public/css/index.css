@@ -44,6 +44,7 @@ body, html {
     background-color: rgb(245, 252, 255);
     background-position: center;
     background-size: contain;
+    height: 100vh;
     padding-top: 150px;
     padding-bottom: 100px;
 }
