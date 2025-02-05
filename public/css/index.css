@@ -45,7 +45,7 @@ body, html {
     background-position: center;
     background-size: contain;
     padding-top: 150px;
-    height: 100vh;
+    padding-bottom: 100px;
 }
 
 #homePageContainer {
@@ -83,15 +83,40 @@ body, html {
 
 #contactPageContainer {
     text-align: center;
+    height: 100vh;
 }
 
 #linkedInLogo {
     width: 50px;
-    height: 50%;
+    height: 50px;
+    margin-right: 10px;
 }
 #gitHubLogo{
     width: 50px;
     height: 50px;
+    margin-left: 10px;
+}
+
+#contactForm label {
+    display: block;
+    width: 50%;
+    margin: 10px auto 10px auto;
+}
+#contactForm input {
+    display: block;
+    width: 50%;
+    margin: 10px auto 10px auto;
+}
+#contactForm textarea {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin: 10px auto 10px auto;
+}
+#contactForm button {
+    display: block;
+    width: 75px;
+    margin: 10px auto 10px auto;
 }
 
 @media screen and (max-width: 1300px) {
@@ -135,7 +160,7 @@ body, html {
     #mainContainer {
         background-color: rgb(245, 252, 255);
         padding-top: 150px;
-        height: 100vh;
+        padding-bottom: 100px;
     }
     
     #homePageContainer {
@@ -211,7 +236,7 @@ body, html {
     #mainContainer {
         background-color: rgb(245, 252, 255);
         padding-top: 150px;
-        height: 100vh;
+        padding-bottom: 100px;
     }
     
     #homePageContainer {

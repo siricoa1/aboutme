@@ -1,4 +1,6 @@
-const Homepage = function () {
+import Project from "./Project.js";
+
+const Home = function () {
     const homePageContainer = document.createElement('div');
     homePageContainer.id = 'homePageContainer';
 
@@ -27,13 +29,17 @@ const Homepage = function () {
     ' Additionally, I am comfortable with using Github, have experience with Jira, and I am familiar with SCRUM methodologies. '+
     'I pride myself on being sociable, professional, and empathetic, always striving for self-awareness and humility.'
 
+    const projectsDiv = document.createElement('div');
+
     homePageContainer.appendChild(homeTitle);
     homePageContainer.appendChild(homeBodyDiv);
     imageDiv.appendChild(imageContainer);
     homeBodyDiv.appendChild(greetingDiv);
     greetingDiv.appendChild(imageDiv);
     greetingDiv.appendChild(greetingsText);
-
+    homePageContainer.appendChild(projectsDiv)
+    const project = Project()
+    project.render(projectsDiv);
     const render = function (parentElement) {
         parentElement.innerHTML = '';
         parentElement.appendChild(homePageContainer);
@@ -42,4 +48,4 @@ const Homepage = function () {
     return { render };
 };
 
-export default Homepage;
+export default Home;

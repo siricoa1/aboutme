@@ -1,5 +1,5 @@
 import Nav from './Nav.js';
-import Homepage from './Homepage.js';
+import Home from './Home.js';
 import Contactpage from './Contactpage.js';
 
 const App = function (parentElement) {
@@ -16,20 +16,22 @@ const App = function (parentElement) {
     appContainer.appendChild(mainContainer);
     parentElement.appendChild(appContainer);
 
-    const renderHomepage = function () {
-        const homepage = Homepage();
-        homepage.render(mainContainer);
+    const renderHome = function () {
+        const home = Home();
+        home.render(mainContainer);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     };
 
     const renderContactpage = function () {
         const contactpage = Contactpage();
         contactpage.render(mainContainer);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     };
 
-    const nav = Nav(renderHomepage, renderContactpage);
+    const nav = Nav(renderHome, renderContactpage);
     nav.render(navContainer);
 
-    renderHomepage();
+    renderHome();
 };
 
 export default App;

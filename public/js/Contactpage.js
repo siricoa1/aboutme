@@ -1,3 +1,5 @@
+import Email from './Email.js';
+
 const Contactpage = function () {
     const contactPageContainer = document.createElement('div');
     contactPageContainer.id = 'contactPageContainer';
@@ -7,10 +9,6 @@ const Contactpage = function () {
 
     const contactPageDiv = document.createElement('div');
     contactPageDiv.id = 'contactPageDiv';
-
-    const contactPageEmail = document.createElement('h3');
-    contactPageEmail.id = 'contactPageEmail'
-    contactPageEmail.textContent = '12siricoa94@gmail.com'
     
     const contactPageLinkedInLink = document.createElement('a');
     const linkedInLogo = document.createElement('img');
@@ -28,9 +26,13 @@ const Contactpage = function () {
 
     contactPageContainer.appendChild(contactTitle);
     contactPageContainer.appendChild(contactPageDiv);
-    contactPageDiv.appendChild(contactPageEmail);
     contactPageDiv.appendChild(contactPageLinkedInLink);
     contactPageDiv.appendChild(contactPageGitHubLink);
+
+    const email = Email();
+    const emailDiv = document.createElement('div');
+    contactPageContainer.appendChild(emailDiv);
+    email.render(emailDiv);
 
     const render = function (parentElement) {
         parentElement.innerHTML = '';
