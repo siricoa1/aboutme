@@ -11,12 +11,28 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.post('/send-email', (req, res) => {
+async function verifyEmail(email) {
+  const fetch = (await import('node-fetch')).default;
+  const apiKey = process.env.MAILBOXLAYER_API_KEY;
+  const url = `http://apilayer.net/api/check?access_key=${apiKey}&email=${email}&smtp=1&format=1`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data.format_valid && data.smtp_check;
+  } catch (error) {
+    console.error("Error verifying email:", error);
+    return false;
+  }
+}
+
+
+app.post('/send-email', async (req, res) => {
   const { name, email, message, subject } = req.body;
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    return res.status(400).send('Invalid email address');
+  const isValidEmail = await verifyEmail(email);
+  if (!isValidEmail) {
+    return res.status(400).send('Invalid or non-existent email.');
   }
 
   const transporter = nodemailer.createTransport({
