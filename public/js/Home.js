@@ -30,6 +30,7 @@ const Home = function () {
     'I pride myself on being sociable, professional, and empathetic, always striving for self-awareness and humility.'
 
     const projectsDiv = document.createElement('div');
+    projectsDiv.id = 'projectsDiv';
 
     homePageContainer.appendChild(homeTitle);
     homePageContainer.appendChild(homeBodyDiv);

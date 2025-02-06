@@ -37,7 +37,7 @@ const Email = function () {
     messageArea.placeholder = 'Your message here';
     messageArea.required = true;
     const messageLabel = document.createElement('label');
-    messageLabel.innerText = 'message'
+    messageLabel.innerText = 'Message'
 
     const submitButton = document.createElement('button');
     submitButton.type = 'submit'

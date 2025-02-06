@@ -7,6 +7,9 @@ const Contactpage = function () {
     const contactTitle = document.createElement('h1');
     contactTitle.textContent = 'Contact';
 
+    const contactText = document.createElement('p');
+    contactText.innerText = 'Below are links to my GitHub and LinkedIn page. You can also contact me directly through email on the form below.'
+
     const contactPageDiv = document.createElement('div');
     contactPageDiv.id = 'contactPageDiv';
     
@@ -25,6 +28,7 @@ const Contactpage = function () {
     contactPageGitHubLink.appendChild(gitHubLogo);
 
     contactPageContainer.appendChild(contactTitle);
+    contactPageContainer.appendChild(contactText);
     contactPageContainer.appendChild(contactPageDiv);
     contactPageDiv.appendChild(contactPageLinkedInLink);
     contactPageDiv.appendChild(contactPageGitHubLink);
