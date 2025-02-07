@@ -135,8 +135,9 @@ body, html {
     width: 80%;
     border-bottom: 1px grey solid;
     padding-bottom: 50px;
-};
-@media screen and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 1560px) {
     #nav {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -188,7 +189,7 @@ body, html {
         width: 80%;
         margin: 20px auto 0px auto;
         text-align: left;
-        font-size: large;
+        font-size: x-large;
         hyphens: auto;
     }
     

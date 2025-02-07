@@ -23,11 +23,11 @@ const Home = function () {
 
     const greetingsText = document.createElement('p');
     greetingsText.id = 'homeGreetingsText';
-    greetingsText.innerText = 'Hi, my name is Andrew Sirico and I am a software engineer specializing in web development. '+ 
-    'I have experience writing programs and scripts in Python, Java, and C. Furthermore, my experience extends to SwiftUI, '+
-    'Android Development, and using AWS EC2 instances. I am proficient in database management with SQL, MongoDB, Firebase, and GraphQL.'+
-    ' Additionally, I am comfortable with using Github, have experience with Jira, and I am familiar with SCRUM methodologies. '+
-    'I pride myself on being sociable, professional, and empathetic, always striving for self-awareness and humility.'
+    greetingsText.innerText = 'Hello, my name is Andrew Sirico, and I am a software engineer specializing in web development. In a collaborative team project, I helped develop a web application that used AI-powered sentiment analysis to rate products. '+
+    'I set up the development environment in Node.js/Express, designed the database model in Firebase, and built the API that leveraged the Hugging Face API for sentiment analysis. '+
+    'I have expertise in Python and Java, having developed sorting algorithms and data structures in both languages during my university studies. While working with C, I gained experience compiling and running scripts in a Linux environment and implementing multi-threading techniques when applicable. '+
+    'My background also includes database management with MySQL, where I learned to prototype and deploy applications using relational database structures. Additionally, I have experience with MongoDB and GraphQL, as well as professional UI development experience for Android and iOS using Java and SwiftUI, respectively. '+
+    'I am well-versed in version control using GitHub, have hands-on experience with Jira, and am familiar with Agile methodologies, including SCRUM. I am committed to continuous learning, collaboration, and maintaining a professional approach in my work.'
 
     const projectsDiv = document.createElement('div');
     projectsDiv.id = 'projectsDiv';
