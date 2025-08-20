@@ -107,6 +107,7 @@ body, html {
 #contactPageContainer {
     width: 80%;
     margin: auto;
+    font-size: larger;
 }
 
 #contactForm {
@@ -133,6 +134,10 @@ body, html {
     display: block;
     width: 75px;
     margin: 10px auto 10px auto;
+    border-radius: .25rem;
+    background-color:rgb(92, 133, 151);
+    font-weight: bolder;
+    color: white;
 }
 
 #projectContainer {
@@ -141,7 +146,21 @@ body, html {
     border-bottom: 1px grey solid;
     padding-bottom: 50px;
 }
-
+.projectWrapper {
+    background-image: linear-gradient(25deg,rgb(162, 215, 240),rgb(135, 255, 189),rgb(135, 255, 189),rgb(162, 215, 240));
+    padding: 20px; 
+    margin: 20px;
+    border-radius: .25rem;
+}
+.projectInnerContainer {
+    background-color: rgb(245, 252, 255);
+    padding: 20px; 
+    margin: 20px;
+    border-radius: .25rem;
+}
+.projectDescription {
+    font-size: larger;
+}
 @media screen and (max-width: 1595px) {
     #nav {
         padding-top: 20px;

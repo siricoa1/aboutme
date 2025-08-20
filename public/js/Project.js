@@ -11,9 +11,10 @@ const Project = function () {
     projectContainer.appendChild(projectsHeader);
     
     for (var i = 0; i < projectList.length; i++){
+        const projectWrapper = document.createElement('div');
+        projectWrapper.className =  'projectWrapper';
         const projectInnerContainer = document.createElement('div');
         projectInnerContainer.className = 'projectInnerContainer';
-        projectInnerContainer.style = 'background-image: linear-gradient(25deg,rgb(162, 215, 240),rgb(135, 255, 189),rgb(135, 255, 189),rgb(162, 215, 240)); padding: 20px; margin: 20px; border-radius: 10px;';
 
         const projectName = document.createElement('h2');
         const projectDescription = document.createElement('p');
@@ -32,7 +33,9 @@ const Project = function () {
         projectInnerContainer.appendChild(projectName);
         projectInnerContainer.appendChild(projectDescription);
         projectInnerContainer.appendChild(projectLink);
-        projectContainer.appendChild(projectInnerContainer);
+        projectWrapper.appendChild(projectInnerContainer);
+        projectContainer.appendChild(projectWrapper);
+
     };
 
     const render = function (parentElement) {
