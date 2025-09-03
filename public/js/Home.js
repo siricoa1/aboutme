@@ -31,7 +31,7 @@ const Home = function () {
     'I set up the development environment in Node.js/Express, designed the database model in Firebase, and built the API that leveraged the Hugging Face API for sentiment analysis. '+
     'I have expertise in Python and Java, having developed sorting algorithms and data structures in both languages during my university studies. While working with C, I gained experience compiling and running scripts in a Linux environment and implementing multi-threading techniques when applicable. '
     
-    greetingsTextTwo.innerText = 'My background also includes database management with MySQL, where I learned to prototype and deploy applications using relational database structures. Additionally, I have experience with MongoDB and GraphQL, as well as professional UI development experience for Android and iOS using Java and SwiftUI, respectively. '+
+    greetingsTextTwo.innerText = 'My background also includes database management with MySQL, where I learned to prototype and deploy applications using relational database structures. Additionally, I have experience with MongoDB and GraphQL, as well as professional UI development experience for Android and iOS using Java and SwiftUI respectively. '+
     'I am well-versed in version control using GitHub, have hands-on experience with Jira, and am familiar with Agile methodologies, including SCRUM. I am committed to continuous learning, collaboration, and maintaining a professional approach in my work.'
 
     const projectsDiv = document.createElement('div');
