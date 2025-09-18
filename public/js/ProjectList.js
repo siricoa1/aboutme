@@ -1,5 +1,11 @@
 const ProjectList = [
     {
+        "projectName": "TriviaTrial",
+        "projectDescription": "This application is a Quiz game designed to test a user's knowledge in different topics the user can choose from."+
+        " The project is currently run on a Node/Express backend and React.js frontend. It leverages its API from Open Trivia Database as its source for questions.",
+        "projectLink": "https://reactquizgame-70f8032060d0.herokuapp.com/"
+    },
+    {
         "projectName": "News App",
         "projectDescription": "This application is designed for users to search for"+
         " news articles by entering a prompt into the search bar."+"It is built using Node.js/Express, React, and MySQL. It also utilizes Firebase for Google"+ 
