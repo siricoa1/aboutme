@@ -1,8 +1,8 @@
 const ProjectList = [
     {
-        "projectName": "TriviaTrial",
+        "projectName": "Trivia Trial",
         "projectDescription": "This application is a Quiz game designed to test a user's knowledge in different topics the user can choose from."+
-        " The project is currently run on a Node/Express backend and React.js frontend. It leverages its API from Open Trivia Database as its source for questions.",
+        " The project is currently run on a Node/Express backend and React.js frontend. Webpack and Babel are used for the build and it leverages the API from Open Trivia Database as its source for questions.",
         "projectLink": "https://reactquizgame-70f8032060d0.herokuapp.com/"
     },
     {
