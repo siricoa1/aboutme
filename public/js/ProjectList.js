@@ -9,7 +9,7 @@ const ProjectList = [
         "projectName": "News App",
         "projectDescription": "This application is designed for users to search for"+
         " news articles by entering a prompt into the search bar."+"It is built using Node.js/Express, React, and MySQL. It also utilizes Firebase for Google"+ 
-        "Authentication and Bootstrap for UI. Furthermore, it uses the API from newsapi.org to retrieve article data.",
+        " Authentication and Bootstrap for UI. Furthermore, it uses the API from newsapi.org to retrieve article data.",
         "projectLink":"https://newsapiapp-a86c0a79e477.herokuapp.com/"
     },
     {
